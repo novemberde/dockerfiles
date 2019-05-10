@@ -15,7 +15,7 @@ RUN apk add --no-cache python3 && \
     rm -r /usr/lib/python*/ensurepip && \
     pip3 install --upgrade pip setuptools
 
-RUN pip3 install awscli --upgrade --user
+RUN pip3 install awscli --upgrade
 RUN apk add --no-cache openssh
 
 RUN apk -v --purge del py-pip && \
